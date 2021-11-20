@@ -20,6 +20,10 @@
   <header>
     <div class="container">
       <img src="./img/logo.png" alt="logo Allbirds" class="logo" />
+
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
       <nav class="header__nav">
         <ul class="header__nav--primary">
           <li><a href="/">Men</a></li>
@@ -43,17 +47,19 @@
     </div>
   </header>
 
+  <div class="fixed-height"></div>
+
 
 
   <!--******** MAIN ********-->
 
   <main>
     <div class="container">
-      <div class="hero__text">
-        <h1>The Trail Runner SWT Is Here.</h1>
-        <p>Durable. Comfortable. Ready to get dirty.</p>
-        <button href="/" class="btn btn--light">Shop men</button>
-        <button href="/" class="btn btn--light">Shop women</button>
+      <div class="hero">
+        <h1 class="hero__title">The Trail Runner SWT Is Here.</h1>
+        <p class="hero__subtitle">Durable. Comfortable. Ready to get dirty.</p>
+        <a href="/" class="btn btn--light">Shop men</a>
+        <a href="/" class="btn btn--light">Shop women</a>
       </div>
     </div>
   </main>
@@ -62,38 +68,52 @@
 
   <!--******** FAVORITES SECTION ********-->
 
-  <section>
-    <div class="favorites container">
+  <section class="favorites">
+    <div class="container">
+
       <h2 class="favorites__title">Our Favorites</h2>
+
       <div class="favorites__links">
-        <a href="/"></a>
-        <a href="/"></a>
-        <a href="/"></a>
+        <a href="/" class="favorites__link">Everyday</a>
+        <a href="/" class="favorites__link">Running</a>
+        <a href="/" class="favorites__link">Travel</a>
       </div>
 
-      <div class="favorites__items">
-        <div class="favorites__item">
+      <div class="favorites__items d-flex">
+        <div class="favorites__item col">
           <img src="./img/favorites-01.jpg" alt="gray wool shoes" />
-          <button href="/" class="btn btn--light">Shop Men</button>
-          <button href="/" class="btn btn--light">Shop Women</button>
-          <h4>Wool Runner</h4>
-          <span>Cozy Sneaker</span>
+          <div class="text__about">
+            <div class="favorites__btn">
+              <a href="/" class="btn btn--light">Shop Men</a>
+              <a href="/" class="btn btn--light">Shop Women</a>
+            </div>
+            <h3>Wool Runner</h3>
+            <span>Cozy Sneaker</span>
+          </div>
         </div>
 
-        <div class="favorites__item">
+        <div class="favorites__item col">
           <img src="./img/favorites-02.jpg" alt="white sneaker" />
-          <button href="" class="btn btn--light">Shop Men</button>
-          <button href="" class="btn btn--light">Shop Women</button>
-          <h4>Tree Runner</h4>
-          <span>Light and Breezy Sneaker</span>
+          <div class="text__about">
+            <div class="favorites__btn">
+              <a href="/" class="btn btn--light">Shop Men</a>
+              <a href="/" class="btn btn--light">Shop Women</a>
+            </div>
+            <h3>Tree Runner</h3>
+            <span>Light and Breezy Sneaker</span>
+          </div>
         </div>
 
-        <div class="favorites__item">
+        <div class="favorites__item col">
           <img src="./img/favorites-03.jpg" alt="gray sneaker for rain" />
-          <button href="" class="btn btn--light">Shop Men</button>
-          <button href="" class="btn btn--light">Shop Women</button>
-          <h4>Wool Runner Mizzle</h4>
-          <span>Rain-Ready Sneaker</span>
+          <div class="text__about">
+            <div class="favorites__btn">
+              <a href="/" class="btn btn--light">Shop Men</a>
+              <a href="/" class="btn btn--light">Shop Women</a>
+            </div>
+            <h3>Wool Runner Mizzle</h3>
+            <span>Rain-Ready Sneaker</span>
+          </div>
         </div>
       </div>
     </div>
@@ -104,15 +124,15 @@
   <!--******** TAGLINE SECTION ********-->
 
   <section class="tagline">
+    <img class="img--full" src="./img/tagline-img.jpg" alt="beaty pink shoes on pink background" />
     <div class="container">
-      <img src="./img/tagline-img.jpg" alt="beaty pink shoes on pink background" />
       <div class="tagline__text">
         <h2>Seasons Change. Your Shoes Don’t Have To.</h2>
         <p>
           Soft and cozy wool shoes to keep you comfortable all year round.
         </p>
-        <button href="" class="btn btn--dark">Shop Men</button>
-        <button href="" class="btn btn--dark">Shop Women</button>
+        <a href="" class="btn btn--dark">Shop Men</a>
+        <a href="" class="btn btn--dark">Shop Women</a>
       </div>
     </div>
   </section>
@@ -121,33 +141,39 @@
 
   <!--******** COLLECTION SECTION ********-->
 
-  <section>
-    <div class="collection container">
-      <h2>Shop The Collections</h2>
+  <section class="collection">
+    <div class="container">
+      <h2 class="collection__title">Shop The Collections</h2>
 
-      <div class="collection__parts">
-        <div class="collection__part">
+      <div class="collection__parts d-flex">
+        <div class="collection__part col">
           <img src="./img/collections-01.jpg" alt="brown shoes" />
-          <h4>New Arrivals</h4>
-          <p>
-            The latest styles and limited edition colors that you can only
-            find here (while they last, that is).
-          </p>
+          <div class="text__about">
+            <h3>New Arrivals</h3>
+            <p>
+              The latest styles and limited edition colors that you can only
+              find here (while they last, that is).
+            </p>
+          </div>
         </div>
 
-        <div class="collection__part">
+        <div class="collection__part col">
           <img src="./img/collections-02.jpg" alt="running people" />
-          <h4>Natural Run Collection</h4>
-          <p>
-            Looking for more sustainable ways to break a sweat? We’ve got you
-            covered from head to toe.
-          </p>
+          <div class="text__about">
+            <h3>Natural Run Collection</h3>
+            <p>
+              Looking for more sustainable ways to break a sweat? We’ve got you
+              covered from head to toe.
+            </p>
+          </div>
         </div>
 
-        <div class="collection__part">
+        <div class="collection__part col">
           <img src="./img/collections-03.jpg" alt="girl in dark clothes" />
-          <h4>Fresh Long Sleeve Tee Colors</h4>
-          <p>It’s crisp, clean and ready for wherever the day takes you.</p>
+          <div class="text__about">
+            <h3>Fresh Long Sleeve Tee Colors</h3>
+            <p>It’s crisp, clean and ready for wherever the day takes you.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -158,9 +184,8 @@
   <!--******** FOR-NATURE SECTION ********-->
 
   <sectoin class="for-nature">
+    <img class="img--full" src="./img/for-nature-img.jpg" alt="some wood" />
     <div class="container">
-      <img src="./img/for-nature-img.jpg" alt="some wood" />
-
       <div class="for-nature__text">
         <h2>Made From Nature, For Nature</h2>
         <p>
@@ -168,7 +193,7 @@
           and eucalyptus trees, because they're our best chance for a
           sustainable future.
         </p>
-        <button href="" class="btn btn--dark">See how</button>
+        <a href="" class="btn btn--dark">See how</a>
       </div>
     </div>
   </sectoin>
@@ -177,27 +202,33 @@
 
   <!--******** NEW-ARRIVALS SECTION ********-->
 
-  <section>
-    <div class="new-arrivals container">
-      <h2>New Arrivals</h2>
+  <section class="new-arrivals">
+    <div class="container">
+      <h2 class="new-arrivals__title">New Arrivals</h2>
 
-      <div class="new-arrivals__items">
-        <div class="new-arrivals__item">
+      <div class="new-arrivals__items d-flex">
+        <div class="new-arrivals__item col">
           <img src="./img/new-arrivals-01.jpg" alt="black shoes" />
-          <h4>Men's Trail Runner SWT</h4>
-          <p>Classic Color, Natural Black</p>
+          <div class="text__about">
+            <h3>Men's Trail Runner SWT</h3>
+            <p>Classic Color, Natural Black</p>
+          </div>
         </div>
 
-        <div class="new-arrivals__item">
+        <div class="new-arrivals__item col">
           <img src="./img/new-arrivals-02.jpg" alt="white shoes" />
-          <h4>Women's Trail Runner SWT</h4>
-          <p>Classic Color, Natural White</p>
+          <div class="text__about">
+            <h3>Women's Trail Runner SWT</h3>
+            <p>Classic Color, Natural White</p>
+          </div>
         </div>
 
-        <div class="new-arrivals__item">
+        <div class="new-arrivals__item col">
           <img src="./img/new-arrivals-03.jpg" alt="red shoes" />
-          <h4>Men's Trail Runner SWT</h4>
-          <p>Limited Edition Color, Diablo</p>
+          <div class="text__about">
+            <h3>Men's Trail Runner SWT</h3>
+            <p>Limited Edition Color, Diablo</p>
+          </div>
         </div>
       </div>
     </div>
@@ -208,8 +239,8 @@
   <!--******** SUSTAINABLE SECTION ********-->
 
   <sectoin class="sustainable">
+    <img class="img--full" src="./img/sustainable-img.jpg" alt="" />
     <div class="container">
-      <img src="./img/sustainable-img.jpg" alt="" />
 
       <div class="sustainable__text">
         <h2>Reversing Climate Change Through Better Business</h2>
@@ -219,7 +250,7 @@
           sustainability approach, our progress thus far, and our bold list of
           commitments for 2025.
         </p>
-        <button href="" class="btn btn--dark">Our Sustainable Practices</button>
+        <a href="" class="btn btn--dark">Our Sustainable Practices</a>
       </div>
     </div>
   </sectoin>
@@ -228,36 +259,42 @@
 
   <!--******** STORIES SECTION ********-->
 
-  <section>
-    <div class="stories container">
-      <h2>Stories</h2>
+  <section class="stories">
+    <div class="container">
+      <h2 class="stories__title">Stories</h2>
 
-      <div class="stories__parts">
-        <div class="stories__part">
+      <div class="stories__parts d-flex">
+        <div class="stories__part col">
           <img src="./img/stories-01.jpg" alt="man running in blue shirt" />
-          <h4>Planet-Friendly Activewear</h4>
-          <p>
-            The Natural Run Collection is made with sustainable materials that
-            can stand up to your toughest workout.
-          </p>
+          <div class="text__about">
+            <h3>Planet-Friendly Activewear</h3>
+            <p>
+              The Natural Run Collection is made with sustainable materials that
+              can stand up to your toughest workout.
+            </p>
+          </div>
         </div>
 
-        <div class="stories__part">
+        <div class="stories__part col">
           <img src="./img/stories-02.jpg" alt="cadr of white shose" />
-          <h4>adidas and Allbirds</h4>
-          <p>
-            Learn more about FUTURECRAFT.FOOTPRINT, our collaborative shoe
-            coming soon.
-          </p>
+          <div class="text__about">
+            <h3>adidas and Allbirds</h3>
+            <p>
+              Learn more about FUTURECRAFT.FOOTPRINT, our collaborative shoe
+              coming soon.
+            </p>
+          </div>
         </div>
 
-        <div class="stories__part">
+        <div class="stories__part col">
           <img src="./img/stories-03.jpg" alt="vivid pieces with some text" />
-          <h4>How much did your outfit cost the planet?</h4>
-          <p>
-            Now any brand can use our Carbon Footprint tools to label their
-            emissions.
-          </p>
+          <div class="text__about">
+            <h3>How much did your outfit cost the planet?</h3>
+            <p>
+              Now any brand can use our Carbon Footprint tools to label their
+              emissions.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -267,20 +304,22 @@
 
   <!--******** SIGNUP SECTION ********-->
 
-  <section>
-    <div class="signup container">
+  <section class="signup">
+    <div class="signup__inner container">
       <h2>Want First Dibs?</h2>
       <p>
         Join our email list and be the first to know about new limited edition
         products, material innovations, and lots of other fun updates.
       </p>
 
-      <div class="signup__form">
-        <input type="email" name="" id="" placeholder="Enter Your Email Address" />
-        <button class="btn btn--dark">Sign Up</button>
-        <span>Note: You can opt-out at any time. See our <a href="/">Privacy Policy</a> and <a
-            href="/">Terms</a>.</span>
+      <form class="signup__form" method="POST">
+        <input class="email" type="email" name="" id="" placeholder="Enter Your Email Address" />
+        <input class="submit btn btn--dark" type="submit" value="Sing up">
+      </form>
+      <div class="nospam">
+        <span>Note: You can opt-out at any time. See our <a href="/">Privacy Policy</a> and <a href="/">Terms</a>.</span>
       </div>
+    </div>
     </div>
   </section>
 
@@ -299,9 +338,9 @@
       </div>
 
       <nav class="footer__nav">
-        <div class="footer__nav-shop">
+        <div class="footer__list">
           <h5 class="footer__title">Shop</h5>
-          <ul class="footer__list">
+          <ul>
             <li><a href="/">Women's Shoes</a></li>
             <li><a href="/">Women's Shoes</a></li>
             <li><a href="/">Men's Shoes</a></li>
@@ -312,9 +351,9 @@
           </ul>
         </div>
 
-        <div class="footer__nav-company">
+        <div class="footer__list"">
           <h5 class="footer__title">Company</h5>
-          <ul class="footer__list">
+          <ul>
             <li><a href="/">Our Stores</a></li>
             <li><a href="/">Our Story</a></li>
             <li><a href="/">Our Materials</a></li>

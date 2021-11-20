@@ -1,0 +1,22 @@
+.tagline {
+  margin: 2em 0 4em;
+
+  &__text {
+    margin: 2em 0;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-weight: $fw-bold;
+      margin-bottom: 1em;
+    }
+
+    & .btn {
+      display: inline-block;
+      margin: 0.5em;
+    }
+  }
+}
+

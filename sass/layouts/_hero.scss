@@ -1,0 +1,33 @@
+main {
+  display: flex;
+  align-items: flex-end;
+  background: url(../../img/hero-img.jpg) top right no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: left;
+  color: $clr-white;
+
+}
+
+.hero {
+  margin-bottom: 3em;
+
+  &__title {
+    margin-bottom: 0.3em;
+  }
+
+  &__subtitle {
+    font-weight: $fw-bold;
+    font-size: $fs-p;
+    margin-bottom: 1.5em;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+
+
+
+}

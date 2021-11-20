@@ -1,0 +1,37 @@
+
+@mixin btn ($width: 180px) {
+  display: block;
+  font-family: $ff;
+  font-size: $fs-btn;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
+  width: $width;
+  padding: 0.7em 0;
+  transition: all 200ms ease-in-out;
+}
+
+.btn--light {
+  @include btn;
+  color: $clr-black;
+  background-color: $clr-white;
+
+  &:hover {
+    transform: scale(1.1);
+    outline: 3px solid $clr-black;
+    outline-offset: -5px;
+  }
+}
+
+.btn--dark {
+  @include btn;
+  color: $clr-white;
+  background-color: $clr-black;
+
+  &:hover {
+    transform: scale(1.1);
+    outline: 2px solid $clr-white;
+    outline-offset: -5px;
+  }
+}

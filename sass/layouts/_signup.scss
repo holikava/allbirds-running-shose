@@ -1,0 +1,40 @@
+.signup__inner {
+  max-width: 740px;
+  margin-bottom: 3em;
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    padding: 0 2em;
+    margin-bottom: 2em;
+  }
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.email {
+    width: 60%;
+    border-bottom: 2px solid black;
+    margin: 0 1em;
+  }
+
+.submit {
+    cursor: pointer;
+    margin-top: 1em;
+  }
+
+.nospam {
+  font-size: $fs-nav-link;
+  color: $clr-gray;
+  max-width: 60%;
+  line-height: 1.2;
+  margin: 1em auto;
+  }

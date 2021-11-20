@@ -1,0 +1,44 @@
+
+$ff: 'Roboto', sans-serif;
+
+$fw-normal: 400;
+$fw-bold: 700;
+
+$fs-h1: 3rem;
+$fs-h2: 2rem;
+$fs-h3: 1.3rem;
+$fs-h4: 1rem;
+$fs-h5: 0.9rem;
+
+$fs-p: 1rem;
+$fs-nav-link: 0.8rem;
+$fs-btn: 0.9rem;
+
+
+body {
+  color: $clr-black;
+  font-family: $ff;
+  font-weight: $fw-normal;
+}
+
+
+h1 {
+  font-size: $fs-h1;
+}
+
+h2 {
+  font-size: $fs-h2;
+}
+
+h3 {
+  font-size: $fs-h3;
+}
+
+h4 {
+  font-size: $fs-h4;
+}
+
+h5 {
+  font-size: $fs-h5;
+}
+

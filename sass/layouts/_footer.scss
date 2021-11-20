@@ -1,0 +1,41 @@
+footer {
+  font-size: $fs-nav-link;
+  text-align: left;
+  color: $clr-white;
+  background-color: $clr-black;
+  padding: 3em 0;
+}
+
+.footer__text {
+  max-width: 500px;
+  margin-bottom: 3em;
+}
+
+
+.footer__title {
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  }
+
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer__list {
+  width: 35%;
+  margin-right: 4em;
+  margin-bottom: 2em;
+
+
+  li:not(last-of-type) {
+    margin-bottom: 1em;
+  }
+}
+
+.copyrights {
+  text-align: center;
+}

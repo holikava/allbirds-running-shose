@@ -1,0 +1,42 @@
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 0 0 100%;
+  max-width: 400px;
+  margin: 0.5em auto;
+  text-align: left;
+}
+
+@media (min-width: 500px) and (max-width: 819px) {
+  .col {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0.5em 0;
+
+    img {
+      max-width: 35%;
+    }
+  }
+
+  .text__about {
+    flex-basis: 65%;
+    align-self: center;
+  }
+}
+
+@media (min-width: 820px) {
+  .col {
+    flex: 0 0 32%;
+    margin: 0.5em 0;
+
+    h3 {
+      margin-top: 0.5em;
+    }
+  }
+}
