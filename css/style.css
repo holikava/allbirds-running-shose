@@ -198,6 +198,8 @@ header {
   width: 100%;
   padding: 1em 0;
   background-color: white;
+  -webkit-box-shadow: 0 10px 10px rgba(33, 42, 47, 0.3);
+          box-shadow: 0 10px 10px rgba(33, 42, 47, 0.3);
 }
 
 .fixed-height {
@@ -253,8 +255,7 @@ header {
 
 .nav-toggle:checked ~ nav a {
   opacity: 1;
-  -webkit-transition: opacity 250ms ease-in-out 250ms;
-  transition: opacity 250ms ease-in-out 250ms;
+  opacity: 250ms ease-in-out 250ms;
 }
 
 .nav-toggle-label {
@@ -295,6 +296,59 @@ header {
 .nav-toggle-label span::after {
   top: 7px;
   height: 2.5px;
+}
+
+@media (min-width: 820px) {
+  .d-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0 1em;
+  }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  .header__nav li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.5em;
+    margin: 0;
+  }
+  .header__nav a {
+    text-transform: uppercase;
+    opacity: 1;
+    -webkit-transition: opacity 150ms ease-in-out;
+    transition: opacity 150ms ease-in-out;
+    vertical-align: middle;
+  }
+  .header__nav--primary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__nav--secondary {
+    margin: 0;
+  }
+  .nav-toggle:checked {
+    all: unset;
+  }
+  .nav-toggle-label {
+    display: none;
+  }
 }
 
 main {

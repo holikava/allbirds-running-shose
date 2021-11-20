@@ -6,6 +6,7 @@ header {
   width: 100%;
   padding: 1em 0;
   background-color: $clr-white;
+  box-shadow: 0 10px 10px rgba(33, 42, 47, 0.3);
 }
 
 .fixed-height {
@@ -55,7 +56,7 @@ header {
 
 .nav-toggle:checked ~ nav a {
   opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
+  opacity: 250ms ease-in-out 250ms;
 }
 
 .nav-toggle-label {
@@ -92,4 +93,56 @@ header {
 .nav-toggle-label span::after {
  top: 7px;
  height: 2.5px;
+}
+
+
+@media (min-width: 820px) {
+
+  .d-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1, 1);
+    
+  
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 0.5em;
+      margin: 0;
+    }
+    
+    a {
+      text-transform: uppercase;
+      opacity: 1;
+      transition: opacity 150ms ease-in-out; 
+      vertical-align: middle;
+    }
+  }
+
+  .header__nav--primary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header__nav--secondary {
+    margin: 0;
+  }
+  
+  .nav-toggle:checked {
+    all: unset;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
 }
