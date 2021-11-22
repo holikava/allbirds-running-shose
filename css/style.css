@@ -358,7 +358,7 @@ main {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background: url(../../img/hero-img.jpg) top right no-repeat;
+  background: url(../img/hero-img.jpg) top right no-repeat;
   background-size: cover;
   min-height: 100vh;
   text-align: left;
