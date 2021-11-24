@@ -14,7 +14,19 @@
 
     &:hover {
       font-weight: $fw-bold;
-      border-bottom: 3px solid $clr-black;
+      position: relative;
+    }
+
+    &:hover::after {
+      content: '';
+      display: block;
+      height: 2.5px;
+      width: 100%;
+      background-color: $clr-black;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
     }
   }
 
